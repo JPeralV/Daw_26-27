@@ -1,4 +1,4 @@
-public class App {
+public class Calendario {
     public static void main(String[] args) throws Exception {
         System.out.printf("\033[106m|%-10s|%-10s|%-10s|%-10s|%-10s|\n", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes");
         System.out.printf("\033[106m|%-50s|\n", "======================================================");
