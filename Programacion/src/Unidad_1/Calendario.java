@@ -1,5 +1,6 @@
+package Unidad_1;
 public class Calendario {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.printf("\033[106m|%-10s|%-10s|%-10s|%-10s|%-10s|\n", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes");
         System.out.printf("\033[106m|%-50s|\n", "======================================================");
         System.out.printf("\033[106m|\033[103m%-10s\033[106m|\033[105m%-10s\033[106m|\033[105m%-10s\033[106m|\033[104m%-10s\033[106m|\033[102m%-10s\033[106m\033[106m|\n", "IPE1", "EDES", "EDES", "BADAT", "SINFb");
