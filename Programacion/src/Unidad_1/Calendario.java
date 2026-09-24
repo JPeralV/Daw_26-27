@@ -1,4 +1,4 @@
-package Unidad_1;
+
 public class Calendario {
     public static void main(String[] args) {
         System.out.printf("\033[106m|%-10s|%-10s|%-10s|%-10s|%-10s|\n", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes");
