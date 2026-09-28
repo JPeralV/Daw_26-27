@@ -7,6 +7,6 @@ public class App {
         System.out.println("Introduzca la nota deseada");
         double notaFinal = scanner.nextFloat();
         double nota2 = notaFinal - ((nota1*0.4))/0.6;
-        System.out.println("La nota necesaria en el segundo para alcanzar un " + notaFinal + " este trimestre teniendo un " + nota1 + " en el primer examen seria: " nota2);
+        System.out.println("La nota necesaria en el segundo para alcanzar un " + notaFinal + " este trimestre teniendo un " + nota1 + " en el primer examen seria: " + nota2);
     }
 }
