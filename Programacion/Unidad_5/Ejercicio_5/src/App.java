@@ -8,8 +8,8 @@ public class App {
         double gravedad = 9.81f;
         double velocidad = (Math.sqrt((2*altura)/gravedad));
         if (altura < 0){
-        System.out.println("No puedo calcular una caida desde altura negativa");}
-        
+        System.out.println("No puedo calcular una caida desde altura negativa");
+        }
         else{
             System.out.println("El objeto tarda " + velocidad + " segundos en caer.");}
         }
@@ -17,3 +17,4 @@ public class App {
     }
     
 
+    
