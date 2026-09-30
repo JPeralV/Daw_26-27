@@ -2,16 +2,18 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Este programa resuelve ecuaciones de primer grado del tipo ax + b = 0");
-        System.out.println("Por favor, introduzca el valor de a");
-        float a = scan.nextFloat();
-        System.out.println("Por favor, introduzca el valor de b");
-        float b = scan.nextFloat();
-        float x = (-b/a);
-        if (Float.isInfinite(x)){
-        System.out.println("Esa ecuación no tiene solución real.");}
+        System.out.println("Calculo de velocidad de caida.");
+        System.out.println("Por favor, introduzca la altura desde la que cae el objeto en metros:");
+        double altura = scan.nextDouble();
+        double gravedad = 9.81f;
+        double velocidad = (Math.sqrt((2*altura)/gravedad));
+        if (altura < 0){
+        System.out.println("No puedo calcular una caida desde altura negativa");}
+        
         else{
-        System.out.println("x= " + x);
+            System.out.println("El objeto tarda " + velocidad + " segundos en caer.");}
         }
+        
     }
-}
+    
+
