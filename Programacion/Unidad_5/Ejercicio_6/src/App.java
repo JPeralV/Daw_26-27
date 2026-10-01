@@ -16,6 +16,26 @@ public class App {
         System.out.println(x1);
         System.out.println(x2);
         //Si la raiz es negativa no tiene solucion (NaN), si raiz es 0 tiene infinitas soluciones (Infinite)
+        /*Si a == 0:
+    Si b != 0:
+        Es una ecuación de primer grado → 1 solución
+    Si b == 0:
+        Si c != 0:
+            No tiene solución
+        Si c == 0:
+            Tiene infinitas soluciones
+
+Si a != 0:
+    Calcular discriminante = b² - 4ac
+
+    Si discriminante > 0:
+        2 soluciones reales
+
+    Si discriminante == 0:
+        1 solución real doble
+
+    Si discriminante < 0:
+        0 soluciones reales*/
     }
 }
 //Si C es 0 una solucion es X = 0 y la otra solucion seria una ecuacion de primer grado
