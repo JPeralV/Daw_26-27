@@ -1,0 +1,30 @@
+.datoUL{ /*Procura nombrar las clases en minuscula, sin numero y con guiones*/
+    text-decoration: underline;
+}
+h1{
+    color: red;
+}
+
+.Trabajador{
+    background-color: grey;
+}
+
+.Trabajador > h2{
+    text-align: center;
+}
+
+.trabajador1{
+    color: blue;
+    
+}
+.trabajador2{
+    color: green;
+    
+}
+
+.Estudios{
+    border-style:double;
+}
+.DatosPersonales{
+    border-style: solid;
+}
