@@ -15,6 +15,24 @@ public class App {
 
         System.out.println(x1);
         System.out.println(x2);
+
+        if (a==0) {
+            if (b == 0) {
+                if (c == 0){
+                    System.out.println("La ecuacion tiene infinitas soluciones");
+                }
+                else{
+                    System.out.println("La ecuacion carece de solucion");
+                }
+            }
+            else /*b=!0*/{
+                System.out.println("");
+            }
+            
+        }
+        else /*a!=0*/{
+
+        }
         //Si la raiz es negativa no tiene solucion (NaN), si raiz es 0 tiene infinitas soluciones (Infinite)
         /*Si a == 0:
     Si b != 0:
