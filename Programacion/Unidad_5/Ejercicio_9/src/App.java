@@ -10,9 +10,9 @@ public class App {
 
             if ( n < -9 || n > 9){
                 n1 = n%10;
-                System.out.println("El primer numero digito de " + n + " es " + n1);
+                System.out.println("El ultimo digito de " + n + " es " + n1);
             }else{
-                System.out.println("El primer numero digito de " + n + " es " + n);
+                System.out.println("El ultimo digito de " + n + " es " + n);
             }
     }
 }
