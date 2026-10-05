@@ -1,4 +1,5 @@
 public class Bird extends Animal {
+    public static int numberOfBirds = 0;
     public Bird (String name, String family){
         super(name,family);
     }
