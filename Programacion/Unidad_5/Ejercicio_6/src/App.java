@@ -12,13 +12,13 @@ public class App {
         double d = (b*b) - (4*a*c); 
         double x1 = (-b + (Math.sqrt(d)))/(2*a);
         double x2 = (-b - (Math.sqrt(d)))/(2*a);
+        double x3 = (-c/b);
 
-        System.out.println(x1);
-        System.out.println(x2);
+       
 
         if (a==0) {
-            if (b == 0) {
-                if (c == 0){
+            if (b==0) {
+                if (c==0){
                     System.out.println("La ecuacion tiene infinitas soluciones");
                 }
                 else{
@@ -26,34 +26,20 @@ public class App {
                 }
             }
             else /*b=!0*/{
-                System.out.println("");
+                System.out.println("Es una ecuacion de primer grado, por lo que x= " + x3);
             }
             
         }
         else /*a!=0*/{
+            if(d<0){
+                System.out.println("La ecuacion no tiene soluciones reales");
+
+            }else{
+                System.out.println("x1 = " +x1);
+                System.out.println("x2 = " +x2);
+            }
 
         }
-        //Si la raiz es negativa no tiene solucion (NaN), si raiz es 0 tiene infinitas soluciones (Infinite)
-        /*Si a == 0:
-    Si b != 0:
-        Es una ecuación de primer grado → 1 solución
-    Si b == 0:
-        Si c != 0:
-            No tiene solución
-        Si c == 0:
-            Tiene infinitas soluciones
-
-Si a != 0:
-    Calcular discriminante = b² - 4ac
-
-    Si discriminante > 0:
-        2 soluciones reales
-
-    Si discriminante == 0:
-        1 solución real doble
-
-    Si discriminante < 0:
-        0 soluciones reales*/
+       
     }
 }
-//Si C es 0 una solucion es X = 0 y la otra solucion seria una ecuacion de primer grado
