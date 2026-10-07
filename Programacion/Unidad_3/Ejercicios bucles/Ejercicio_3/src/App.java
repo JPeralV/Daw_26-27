@@ -2,13 +2,14 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
-        int pass = 4242;
+        final int pass = 4242;
         int tryPass = 4;
         int passIn = 0;
        
 
         System.out.println("Introduzca la contraseña: ");
         passIn = scan.nextInt();
+        
 
         if (passIn == pass){
             System.out.println("Contraseña correcta, abriendo caja.");
