@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
-        Vehiculo Bici = new Bicicleta();
-        Vehiculo Arona = new Coche();
+        Bicicleta Bici = new Bicicleta();
+        Coche Arona = new Coche();
         int instruccion = 0;
 
         System.out.println("1. Anda con la bicicleta.");
@@ -24,7 +24,17 @@ public class App {
                 Bici.anda(kilometros);
             }
                 
-            
+            case 2:{
+                Bici.caballito();
+            }
+            case 3:{
+                System.out.println("¿Cuantos km quieres reccorrer?");
+                int kilometros = scan.nextInt();
+                Arona.anda(kilometros);
+            }
+            case 4:{
+                Arona.quemandoRueda();
+            }
         }
 
         
