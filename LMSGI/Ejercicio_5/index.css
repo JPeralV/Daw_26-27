@@ -1,3 +1,32 @@
+/*Resets*/
+*{
+    box-sizing: border-box;
+   
+}
+
+body{
+     margin:0;
+    padding: 0;
+    min-height: 100vh; /*Hace que el body mira como minimo toda la altura visible del navegador. VH = ViewPort Height*/
+    /*dvh (Dinamic  viewport height) ayuda a hacer mas reponsive el diseño*/
+    display: flex; /*Utiliza flexbox para alinar los elementos de la lista en una fila*/
+    flex-direction: column; /*Los elementos flexibles hijos se alinean verticalmente*/
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /*Establece la altura de la linea*/
+    background-color: aliceblue;
+    color: black;
+
+
+
+}
+
+main{
+    flex: 1;
+    padding: 2rem,2rem,2rem,2rem;
+}
+
+
 header{
     h1{
         text-align: center;
@@ -82,13 +111,20 @@ ul{
     
 }
 
-ul li::marker{
-    color:deepskyblue;
-}
+ul{
 
-ol li::marker{
+li::marker{
     color:deepskyblue;
-}
+    }
+}  
+
+
+ol {
+    li::marker{
+    color:deepskyblue;
+        }
+    }
+
 
 dl{
     dt{
