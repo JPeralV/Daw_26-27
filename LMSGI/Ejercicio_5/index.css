@@ -1,0 +1,97 @@
+header{
+    h1{
+        text-align: center;
+        font-weight: 100;
+        background-color: deepskyblue;
+        color: aliceblue;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+}
+
+section{
+    h2{
+        color: deepskyblue;
+        font-weight: bold;
+        border-color: deepskyblue;
+        border-bottom-style: solid;
+    }
+    h3{
+        font-weight: bold;
+    }
+}
+
+footer{
+     text-align: center;
+        background-color: deepskyblue;
+        color: aliceblue;
+        padding-top: 1px;
+        padding-bottom: 1px;
+
+}
+
+.under-dotted{
+    
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.remark{
+    background-color: yellow;
+
+}
+
+.small{
+    font-size: xx-small;
+}
+
+.crossed{
+    text-decoration: line-through;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.bottom{
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+.top{
+    vertical-align: super;
+    font-size: smaller;
+}
+
+a{
+    color: deepskyblue;
+}
+
+ul{
+    list-style-type: square;
+    
+}
+
+ul li::marker{
+    color:deepskyblue;
+}
+
+ol li::marker{
+    color:deepskyblue;
+}
+
+dl{
+    dt{
+        color: deepskyblue;
+    }
+}
