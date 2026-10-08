@@ -7,9 +7,10 @@ public class App {
         int exp = 0;
         System.out.println("Introduzca un numero y le mostrare su tabla de multiplicar:");
         n = scan.nextInt();
-        for ( int i = 0; i > 10; i++){
+        for ( int i = 0; i <= 10; i++){
         res = n * exp;
+        System.out.println("" + n + " x " + exp + " = " + res);
         exp++;
-        System.out.println("" + n + " x " + exp + " = " + res);}
+        }
     }
 }
