@@ -42,10 +42,12 @@ h1,h2{
 }
 
 .imagen-banda{
+    img{
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
     border-radius: 10px;
+    }
 }
 
 ul{
@@ -54,29 +56,28 @@ ul{
 }
 
 table {
-    --size: 1px;
-    --type: solid;
   border-collapse: collapse;
   margin: 0 auto 20px auto;
-  border: var(--size --type --color);
+  border: 1px solid #DDD;
 }
 
 th {
-    
   background-color: #2C3E50;
   color: #FFF;
   text-align: center;
-  border: var(--size --type --color);
-  padding: 10px;
+  border: 1px solid #DDD;
 }
 
+th, td {
+  padding: 10px;
+}
 
 td {
   text-align: left;
   white-space: nowrap;
-   border: var(--size --type --color);
-   padding: 10px;
+  border: 1px solid #DDD;
 }
+
 
 .enlace-web{
 
