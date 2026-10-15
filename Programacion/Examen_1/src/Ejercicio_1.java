@@ -4,12 +4,12 @@ public class Ejercicio_1 {
         Scanner scan = new Scanner(System.in);
         String cliente;
         int entradasA = 0;
-        float precioA = 9.6f;
+        final float precioA = 9.6f;
         int entradasN = 0;
-        float precioN = 4.95f;
+        final float precioN = 4.95f;
         int audioguias = 0;
-        float precioAudio = 3.5f;
-        int descuento = 17;
+        final float precioAudio = 3.5f;
+        final  int descuento = 17;
         float totalN = 0;
         float totalA = 0;
         float totalAudioguias = 0;
@@ -32,7 +32,7 @@ public class Ejercicio_1 {
         total = subtotal - totalDescuento;
 
         System.out.println("==================================================");
-        System.out.println("Cliente: " + cliente);
+        System.out.printf("%10s %10s \n", "Cliente", cliente );
         System.out.println("Adultos: " + entradasA + " " + totalA + " €");
         System.out.println("Niños: " + entradasN + " " + totalN + " €");
         System.out.println("Guias: " + audioguias + " " + totalAudioguias + " €");
