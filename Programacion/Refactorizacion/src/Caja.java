@@ -5,15 +5,15 @@ private static int totalAudioguias = 0;
 private static double ingresosAcumulados = 0;
 private static double totalDescuentoAplicado = 0;
 
-public void registrarTicket (Ticket ticket){
-totalEntradasAdultos += ticket.getEntradaAdulto();
-totalEntradasNinio += ticket.getEntradaNinio();
-totalAudioguias += ticket.getAudioguia();
-ingresosAcumulados += ticket.getIngreso();
-totalDescuentoAplicado += ticket.getDescuento();
+public static void registrarTicket (Ticket arqueo){
+totalEntradasAdultos += arqueo.getEntradaAdulto();
+totalEntradasNinio += arqueo.getEntradaNinio();
+totalAudioguias += arqueo.getAudioguia();
+ingresosAcumulados += arqueo.calcularTotal();
+totalDescuentoAplicado += arqueo.calcularDescuentoAudioguias();
 }
 
-public void mostrarResumenDia(){
+public static void mostrarResumenDia(){
     System.out.printf("==============================\n");
     System.out.printf("%s-15 %s15\n", "Entradas adulto:", totalEntradasAdultos);
     System.out.printf("%s-15 %s15\n", "Entradas niño:", totalEntradasNinio);

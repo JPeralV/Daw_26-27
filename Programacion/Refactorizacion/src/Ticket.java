@@ -1,18 +1,20 @@
 public class Ticket {
+//Atributos
 private static int cantidadEntraAdulto;
 private static int cantidadEntradaNinio;
 private static int cantidadAudioguia;
-public static final double PEADULTO = 9.6f;
-public static final double PENINIO = 4.95f;
-public static final double PAUDIOGUIA = 3.50f;
-public static final double DESCUENTO = 0.17f;
-
+//Constantes
+private static final double PEADULTO = 9.6d;
+private static final double PENINIO = 4.95d;
+private static final double PAUDIOGUIA = 3.50d;
+private static final double DESCUENTO = 0.17d;
+//Constructores
 public Ticket (int cantidadEntraAdulto, int cantidadEntradaNinio, int cantidadAudioguia){
     this.cantidadEntraAdulto = cantidadEntraAdulto;
     this.cantidadEntradaNinio = cantidadEntradaNinio;
     this.cantidadAudioguia = cantidadAudioguia;
 }
-
+//Metodos
 public double calcularSubtotal(){
 return (cantidadEntraAdulto * PEADULTO) + (cantidadEntradaNinio * PENINIO) + (cantidadAudioguia * PAUDIOGUIA);
 }
@@ -34,25 +36,18 @@ public void imprimirTicket(){
     System.out.printf("\033[107m\033[m31 %s-15 %15\u001b[0m\n","Total:", calcularTotal());
     System.out.printf("==============================\n");
 
-    
+
 }
+//Getters
 public int getEntradaAdulto(){
-        return cantidadEntraAdulto;
+        return this.cantidadEntraAdulto;
     }
 
 public int getEntradaNinio(){
-    return cantidadEntradaNinio;
+    return this.cantidadEntradaNinio;
 }
 
 public int getAudioguia(){
-    return cantidadAudioguia;
-}
-
-public double getIngreso(){
-    return calcularTotal();
-}
-
-public double getDescuento(){
-    return calcularDescuentoAudioguias();
+    return this.cantidadAudioguia;
 }
 }
