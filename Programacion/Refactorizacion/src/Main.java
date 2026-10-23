@@ -2,7 +2,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws Exception {
       Scanner scan = new Scanner(System.in);
-      boolean salir = false;
       int opcion = 0;
       
       do{
@@ -16,20 +15,30 @@ public class Main {
             System.out.printf("==============================\n");
             opcion = scan.nextInt();
             switch (opcion) {
-                case 1:
-                    
+                case 1:{
+                Ticket ticket = new Ticket(cantidadEntraAdulto, cantidadEntradaNinio, cantidadAudioguia);
+                Caja.registrarTicket(ticket);
+                Ticket.imprimirTicket(ticket);
+                }
+                case 2: {
+                    Caja.mostrarResumenDia();
+                }
+                
+                case 3:{
+                    System.out.println("Hasta luego Lucas");
+                }
             
-            
-                default:
-                    break;
+                default: {
+                    System.out.println("Opcion invalida.");
+                }
             }
         }
         catch(NumberFormatException e){
             System.out.println("Opcion no reconocida por el sistema.");
             scan.next();
-            salir = false;
+            
         }
-      }while(salir == false);
+      }while(opcion != 3);
 
 
 
