@@ -1,5 +1,16 @@
-public class App {
+import java.util.Random;
+
+public class Mazmorra {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+       
+        }
+
+         private static int tirarDado20(){
+            Random dado = new Random();
+            return dado.nextInt(20) + 1;
     }
+
+
+    
 }

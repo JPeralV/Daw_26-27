@@ -1,0 +1,19 @@
+<!DOCTYPE banco SYSTEM "banco.dtd">
+
+<banco>
+    <sucursal codigo = "S01">
+        <cuenta codigo = "C01">
+            <cliente></cliente>
+            <cliente></cliente>
+        </cuenta>
+         <cuenta codigo = "C02">
+            <cliente></cliente>
+            <cliente></cliente>
+        </cuenta>
+    </sucursal>
+    <sucursal codigo = "S02">
+        <cuenta codigo = "C03">
+            <cliente></cliente>
+        </cuenta>
+    </sucursal>
+</banco>
