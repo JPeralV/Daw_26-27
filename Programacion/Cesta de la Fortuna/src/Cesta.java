@@ -4,7 +4,6 @@ public class Cesta {
 private static int bolasBlancas;
 private static int bolasAzules;
 private static int bolasNegras;
-private static int totalBolas = 0;
 
 //Constructos
 public Cesta (int bolasBlancas, int BolasAzules, int bolasNegra){
@@ -12,15 +11,29 @@ public Cesta (int bolasBlancas, int BolasAzules, int bolasNegra){
     this.bolasAzules = 1;
     this.bolasNegras = 1;
 }
-
-private void obtenerTotalBolas(){
-    int totalBolas = bolasAzules + bolasBlancas + bolasNegras;
+//Metodos
+private int obtenerTotalBolas(){
+   return  bolasAzules + bolasBlancas + bolasNegras;
 
 }
 
-//public char
+public char sacarBola(){
+ char bola = extraerBola(bolasBlancas,bolasAzules,bolasNegras);
+ switch (bola) {
+    case 'B':
+        bolasBlancas--;
+        case 'A':
+        bolasAzules--;
+        case 'N':
+        bolasNegras--;
+        
+        
+ }
+ return bola;
+}
 private static char extraerBola (int b, int a, int n) {
     Random rand = new Random();
+    int totalBolas = b + a + n;
     if (totalBolas == 0) return 'V';
 
     int tirada = rand.nextInt(totalBolas) +1;
@@ -34,5 +47,15 @@ private static char extraerBola (int b, int a, int n) {
     }
 }
 
+//Getters
+public static int getBolasBlancas() {
+    return bolasBlancas;
+}
+public static int getBolasAzules() {
+    return bolasAzules;
+}
+public static int getBolasNegras() {
+    return bolasNegras;
+}
 
 }
