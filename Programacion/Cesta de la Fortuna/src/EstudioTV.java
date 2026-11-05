@@ -60,7 +60,7 @@ public class EstudioTV {
       }
       
     
-     
+     //Control de excepciones
 
  private static int leerEntero(){
             boolean esCorrecto = false;
