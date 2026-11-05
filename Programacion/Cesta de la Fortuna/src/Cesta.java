@@ -6,13 +6,13 @@ private static int bolasAzules;
 private static int bolasNegras;
 
 //Constructos
-public Cesta (int bolasBlancas, int BolasAzules, int bolasNegra){
+public Cesta (){
     this.bolasBlancas = 10;
     this.bolasAzules = 1;
     this.bolasNegras = 1;
 }
 //Metodos
-private int obtenerTotalBolas(){
+private static int obtenerTotalBolas(){
    return  bolasAzules + bolasBlancas + bolasNegras;
 
 }
@@ -22,9 +22,11 @@ public char sacarBola(){
  switch (bola) {
     case 'B':
         bolasBlancas--;
-        case 'A':
+        break;
+    case 'A':
         bolasAzules--;
-        case 'N':
+        break;
+    case 'N':
         bolasNegras--;
         
         
@@ -56,6 +58,8 @@ public static int getBolasAzules() {
 }
 public static int getBolasNegras() {
     return bolasNegras;
+}public static int getTotalBolas() {
+    return obtenerTotalBolas();
 }
 
 }

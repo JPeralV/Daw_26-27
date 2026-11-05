@@ -8,6 +8,8 @@ private static int premioAcumulado;
 private static final int valorBolaBlanca = 100;
 private static final int valorBolaAzul = 200;
 
+
+
 //Constructor
 public Concursante (String nombre, int premioAcumulado){
     this.nombre = nombre;
@@ -15,11 +17,11 @@ public Concursante (String nombre, int premioAcumulado){
 }
 
 //Metodos
-private void sumarPremio (int cantidad){
+public void sumarPremio (int cantidad){
     premioAcumulado += cantidad;
 }
 
-private void bancarrota(){
+public void bancarrota(){
     premioAcumulado = 0;
 }
 
@@ -31,6 +33,12 @@ public static String getNombre() {
 public static int getPremioAcumulado() {
     return premioAcumulado;
 }
+public static int getValorbolablanca() {
+    return valorBolaBlanca;
+}
 
+public static int getValorbolaazul() {
+    return valorBolaAzul;
+}
 
 }
