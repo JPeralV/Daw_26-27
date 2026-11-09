@@ -10,7 +10,7 @@ public class escapeRoom {
         return (int) (Math.random()*9)+1;
     }
 
-    // Generar codigo
+    
 
 
 
@@ -38,7 +38,7 @@ public class escapeRoom {
        
 
         new habitacion ( generarPista(), generarPista(), generarPista());
-        int cs = habitacion.getPistaAlfombra() + habitacion.getPistaCajon() + habitacion.getPistaCuadro();
+        int cs = habitacion.getPistaAlfombra()  + habitacion.getPistaCajon()  + habitacion.getPistaCuadro();
         new cajaFuerte(cs, 3);
         
         do{ 
@@ -76,12 +76,12 @@ public class escapeRoom {
                     break;
             }
 
-        }while (!cajaFuerte.isEstaAbierta() && !cajaFuerte.bloqueada());
+        }while (!cajaFuerte.bloqueada());
 
         if (cajaFuerte.isEstaAbierta() == true){
             System.out.println("¡Felicidades! Has escapado");
         }
-        if (cajaFuerte.bloqueada() == true){
+        else if (cajaFuerte.bloqueada() == true){
             System.out.println("Lo siento, has bloqueado la caja fuerte. Se acabo el juego.");
         }
       
