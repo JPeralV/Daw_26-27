@@ -29,10 +29,7 @@ public static int intentarAbrir (int combinacion){
 
 
 public static boolean bloqueada(){
-    if (intentosRestantes == 0) {
-        return true;
-    }
-    return false;
+    return intentosRestantes == 0;
 }
 
 public static int getIntentosRestantes() {
