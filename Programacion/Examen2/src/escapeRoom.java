@@ -76,7 +76,7 @@ public class escapeRoom {
                     break;
             }
 
-        }while (!cajaFuerte.bloqueada());
+        }while (!cajaFuerte.isEstaAbierta() || !cajaFuerte.bloqueada());
 
         if (cajaFuerte.isEstaAbierta() == true){
             System.out.println("¡Felicidades! Has escapado");
