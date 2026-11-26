@@ -3,7 +3,7 @@ public static final int maxContactos = 20;
 Contacto[] contactos = new Contacto [maxContactos];
 
 
-private boolean estaVacia() {
+public boolean estaVacia() {
     int i = 0;
     boolean vacia = true;
     do{
@@ -33,13 +33,30 @@ private int buscarHueco(){
     }
 
     }
+    
+    public boolean estaLlena(){ 
+        return buscarHueco() > maxContactos;
+    }
 
-public void añadirContacto(){
+public void añadirContacto(Contacto nuevoContacto){
+    
     if (buscarHueco() > maxContactos){
         System.out.println("La agenda esta llena");
     }else{
-        contactos[buscarHueco()] = 
+        contactos[buscarHueco()] = nuevoContacto;
     }
+    }
+
+    @Override 
+    public String toString(){
+        String agendaString = "";
+
+        for (Contacto c: this.contactos){
+            if (c != null){
+                agendaString += c + "\n";
+            }
+        }
+        return agendaString;
     }
 
 }

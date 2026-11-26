@@ -8,7 +8,7 @@ public class Libro {
 
     //Constructores
 
-    public Libro(String titulo, String autor, int anioPublicacion, boolean disponible, int vecesPrestado) {
+    public Libro(String titulo, String autor, int anioPublicacion) {
         this.titulo = titulo;
         this.autor = autor;
         this.anioPublicacion = anioPublicacion;
